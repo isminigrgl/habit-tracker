@@ -1,3 +1,4 @@
+![CI](https://github.com/isminigrgl/habit-tracker/actions/workflows/ci.yml/badge.svg)
 # habit-tracker
 Habit tracker app — Group Assignment 3
 
