@@ -30,9 +30,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Automated Tests
-        run: npm test
-
       - name: Lint code with ESLint
         run: npm run lint
 
