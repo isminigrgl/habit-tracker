@@ -14,8 +14,8 @@ on:
       - main
 
 jobs:
-  build:
-    name: Build Application
+  build-test-lint:
+    name: Build, Test and Lint Application
     runs-on: ubuntu-latest
 
     steps:
@@ -30,7 +30,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Lint code with ESLint
+      - name: Run lint
         run: npm run lint
 
       - name: Run automated tests
@@ -42,5 +42,5 @@ jobs:
       - name: Verify backend server file exists
         run: test -f server.js
 
-      - name: Build docker image
+      - name: Build Docker image
         run: docker build -t habit-tracker .
