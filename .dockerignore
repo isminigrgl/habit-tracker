@@ -1,0 +1,9 @@
+node_modules
+.git
+.github
+coverage
+.env
+*.log
+*.pdf
+diagram.png
+ci-cd-screenshots/
