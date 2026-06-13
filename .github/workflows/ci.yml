@@ -41,3 +41,6 @@ jobs:
 
       - name: Verify backend server file exists
         run: test -f server.js
+
+      - name: Build docker image
+        run: docker build -t habit-tracker .
