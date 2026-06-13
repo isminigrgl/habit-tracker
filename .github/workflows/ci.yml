@@ -33,8 +33,13 @@ jobs:
       - name: Lint code with ESLint
         run: npm run lint
 
+      - name: Show Jest location
+        run: |
+          which jest || true
+          ls -l node_modules/.bin || true
+      
       - name: Run automated tests
-        run: npm test
+        run: node ./node_modules/jest/bin/jest.js
 
       - name: Build frontend application
         run: npm run build
